@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Cadastro do Agricultor</title>
+</head>
+<body>
+<div class="caixa">
+    <h2>CADASTRO DO AGRICULTOR</h2>
+</div>
+<div class="caixa">
+    <div class="subtitulo">
+        <h3>IDENTIFICAÇÃO DO TITULAR/PRODUTOR</h3>
+    </div>
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" class="texto" required>
+
+        <label for="genero">Gênero:</label>
+        <div class="genero">
+            <label><input type="radio" id="generoM" name="genero" value="M" required> Masculino</label>
+            <label><input type="radio" id="generoF" name="genero" value="F" required> Feminino</label>
+            <label><input type="radio" id="generoF" name="genero" value="F" required> Outro/Prefiro não responder</label>
+        </div>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" class="texto" name="cpf" maxlength="11" pattern="\d{11}" inputmode="numeric" required>        
+        
+        <label for="nomeMae">Nome da Mãe:</label>
+        <input type="text" id="nomeMae" name="nomeMae" class="texto" required>
+
+        <label for="Data">Data de Nascimento:</label>
+        <input type="date" id="data" name="data" /><br /><br />
+
+        <label for="RG">RG:</label>
+        <input type="text" id="RG" name="RG" class="texto" maxlength="8" pattern="\d{8}" inputmode="numeric" required>        
+ 
+        <label for="NIS">NIS:</label>
+        <input type="text" id="NIS" name="NIS" class="texto" maxlength="11" pattern="\d{11}" inputmode="numeric" required>        
+
+        <label for="municipio">Município de Nascimento:</label>
+        <input type="text" id="municipio" name="municipio" class="texto" required>
+
+        <label for="escolaridade">Escolaridade:</label>
+        <select id="escolaridade" name="escolaridade" required>
+            <option value="">Selecione...</option>
+            <option value="incompletoEM">Ensino Médio Incompleto</option>
+            <option value="completoEM">Ensino Médio Completo</option>
+            <option value="incompletoGRA">Graduação Superior Incompleta</option>
+            <option value="completoGRA">Graduação Superior Completa</option>
+            <option value="incompletoPOS">Pós-Graduação Incompleta</option>
+            <option value="completoPOS">Pós-Graduação Completa</option>
+        </select>
+
+        <label for="familia">Número de pessoas residentes no estabelecimento:</label>
+        <input type="text" id="familia" name="familia" class="texto" maxlength="2" pattern="\d{2}" inputmode="numeric" required>
+
+        <label for="estadoCivil">Estado Civil:</label>
+        <input type="text" id="estadoCivil" name="estadoCivil" class="texto" required>
+
+        <label for="contatos">Contatos:</label>
+        <input type="text" id="contatos" name="contatos" class="texto" required>
+
+        <label for="local">Local da Residência:</label>
+        <input type="text" id="local" name="local" class="texto" required>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" class="texto" required>
+
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" class="texto" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" class="texto" required>
+
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" class="texto" required>
+    </form>
+</div>
+<div class="caixa">
+    <div class="subtitulo">
+        <h3>IDENTIFICAÇÃO DO CÔNJUGE</h3>
+    </div>
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" class="texto" required>
+
+        <label for="genero">Gênero:</label>
+        <div class="genero">
+            <label><input type="radio" id="generoM" name="genero" value="M" required> Masculino</label>
+            <label><input type="radio" id="generoF" name="genero" value="F" required> Feminino</label>
+            <label><input type="radio" id="generoF" name="genero" value="F" required> Outro/Prefiro não responder</label>
+        </div>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" class="texto" maxlength="11" pattern="\d{11}" inputmode="numeric" required>        
+        
+        <label for="nomeMae">Nome da Mãe:</label>
+        <input type="text" id="nomeMae" name="nomeMae" class="texto" required>
+
+        <label for="Data">Data de Nascimento:</label>
+        <input type="date" id="data" name="data" class="texto" /><br /><br />
+
+        <label for="RG">RG:</label>
+        <input type="text" id="RG" name="RG" class="texto" maxlength="8" pattern="\d{8}" inputmode="numeric" required>        
+ 
+        <label for="NIS">NIS:</label>
+        <input type="text" id="NIS" name="NIS" class="texto" maxlength="11" pattern="\d{11}" inputmode="numeric" required>        
+
+        <label for="municipio">Município de Nascimento:</label>
+        <input type="text" id="municipio" name="municipio" class="texto" required>
+
+        <label for="escolaridade">Escolaridade:</label>
+        <select id="escolaridade" name="escolaridade" required>
+            <option value="">Selecione...</option>
+            <option value="incompletoEM">Ensino Médio Incompleto</option>
+            <option value="completoEM">Ensino Médio Completo</option>
+            <option value="incompletoGRA">Graduação Superior Incompleta</option>
+            <option value="completoGRA">Graduação Superior Completa</option>
+            <option value="incompletoPOS">Pós-Graduação Incompleta</option>
+            <option value="completoPOS">Pós-Graduação Completa</option>
+        </select>
+    </form>
+</div>
+<div class="caixa">
+    <div class="subtitulo">
+        <h5>INFORMAÇÕES SÓCIO-ECONÔMICAS DO(A) AGRICULTOR(A)</h5>
+    </div>
+    <form action="#" method="post">
+        <label for="ORG">Organização(ões) social(ais) qual(ais) pertence:</label>
+        <div class="ORG">
+            <label><input type="radio" id="ORG" name="ORG" required> STR/SIND.AGR.FAM</label>
+            <label><input type="radio" id="ORG" name="ORG" required> COOPERATIVA</label>
+            <label><input type="radio" id="ORG" name="ORG" required> ASSOCIAÇÃO</label>
+        </div>
+
+        <label for="posse">Condição de posse e uso da terra:</label>
+        <div class="ORG">
+            <label><input type="radio" id="posse" name="posse" required> PROPRIETÁRIO(A)</label>
+            <label><input type="radio" id="posse" name="posse" required> ARRENDATÁRIO(A)</label>
+            <label><input type="radio" id="posse" name="posse" required> POSSEIRO(A)</label>
+            <label><input type="radio" id="posse" name="posse" required> MEEIRO(A)</label>
+            <label><input type="radio" id="posse" name="posse" required> ASSENTADO(A)</label>
+            <label><input type="radio" id="posse" name="posse" required> ACAMPAMENTO</label>
+        </div>
+
+        <label for="atividades">Atividades Principais:</label>
+        <div class="ORG">
+            <label><input type="radio" id="atividades" name="atividades" required> AGRICULTOR(A)</label>
+            <label><input type="radio" id="atividades" name="atividades" required> PESCADOR(A)</label>
+            <label><input type="radio" id="atividades" name="atividades" required> OUTRA</label>
+        </div>
+    </form>
+</div>
+<div class="caixa">
+    <div class="subtitulo">
+        <h3>LOCALIZAÇÃO DO IMÓVEL</h3>
+    </div>
+    <form action="#" method="post">
+        <label for="imovel">Denominação do Imóvel:</label>
+        <input type="text" id="imovel" name="imovel" class="texto" required>
+
+        <label for="area">Área:</label>
+        <input type="text" id="area" name="area" class="texto" required>
+
+        <label for="OBS">Observações:</label>
+        <input type="text" id="OBS" name="OBS" class="texto" required>
+    </form>
+</div>
+<div class="tabela">
+    <h2>PRODUTOS</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Área</th>
+                <th>Unidade</th>
+                <th>Volume</th>
+                <th>Periodicidade (meses)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="col1_row1" class="table-input"></td>
+                <td><input type="text" name="col2_row1" class="table-input"></td>
+                <td><input type="text" name="col3_row1" class="table-input"></td>
+                <td><input type="text" name="col4_row1" class="table-input"></td>
+                <td><input type="text" name="col5_row1" class="table-input"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="col1_row2" class="table-input"></td>
+                <td><input type="text" name="col2_row2" class="table-input"></td>
+                <td><input type="text" name="col3_row2" class="table-input"></td>
+                <td><input type="text" name="col4_row2" class="table-input"></td>
+                <td><input type="text" name="col5_row2" class="table-input"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="col1_row3" class="table-input"></td>
+                <td><input type="text" name="col2_row3" class="table-input"></td>
+                <td><input type="text" name="col3_row3" class="table-input"></td>
+                <td><input type="text" name="col4_row3" class="table-input"></td>
+                <td><input type="text" name="col5_row3" class="table-input"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="col1_row4" class="table-input"></td>
+                <td><input type="text" name="col2_row4" class="table-input"></td>
+                <td><input type="text" name="col3_row4" class="table-input"></td>
+                <td><input type="text" name="col4_row4" class="table-input"></td>
+                <td><input type="text" name="col5_row4" class="table-input"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="col1_row5" class="table-input"></td>
+                <td><input type="text" name="col2_row5" class="table-input"></td>
+                <td><input type="text" name="col3_row5" class="table-input"></td>
+                <td><input type="text" name="col4_row5" class="table-input"></td>
+                <td><input type="text" name="col5_row5" class="table-input"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="col1_row6" class="table-input"></td>
+                <td><input type="text" name="col2_row6" class="table-input"></td>
+                <td><input type="text" name="col3_row6" class="table-input"></td>
+                <td><input type="text" name="col4_row6" class="table-input"></td>
+                <td><input type="text" name="col5_row6" class="table-input"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="col1_row7" class="table-input"></td>
+                <td><input type="text" name="col2_row7" class="table-input"></td>
+                <td><input type="text" name="col3_row7" class="table-input"></td>
+                <td><input type="text" name="col4_row7" class="table-input"></td>
+                <td><input type="text" name="col5_row7" class="table-input"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="col1_row8" class="table-input"></td>
+                <td><input type="text" name="col2_row8" class="table-input"></td>
+                <td><input type="text" name="col3_row8" class="table-input"></td>
+                <td><input type="text" name="col4_row8" class="table-input"></td>
+                <td><input type="text" name="col5_row8" class="table-input"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="col1_row9" class="table-input"></td>
+                <td><input type="text" name="col2_row9" class="table-input"></td>
+                <td><input type="text" name="col3_row9" class="table-input"></td>
+                <td><input type="text" name="col4_row9" class="table-input"></td>
+                <td><input type="text" name="col5_row9" class="table-input"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="tabela">
+    <h2>DEMANDAS</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Capacitações/Assistência Técnica</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="col1_row1" class="table-input"></td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th>INFRAESTRUTURA (sementes, mudas, máquinas, equipamentos, implementos, insumos...)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="col1_row1" class="table-input"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="button">
+        <button type="submit">Enviar</button>
+    </div>
+</div>
+</body>
+</html>
